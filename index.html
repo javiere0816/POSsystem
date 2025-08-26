@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sonic POS Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Sonic POS - Switchboard</h1>
+    <div id="container">
+      <div id="orderSection">
+        <h3>Current Order:</h3>
+        <ul id="orderList"></ul>
+      </div>
+      <div id="menuSection">
+        <div id="category">
+          <button onclick="addOrder('Category')">COMBOS</button>
+          <button onclick="addOrder('Category')">SIDES</button>
+          <button onclick="addOrder('Category')">DRINKS</button>
+          <button onclick="addOrder('Category')">SHAKES</button>
+          <button onclick="addOrder('Category')">BLASTS</button>
+          <button onclick="addOrder('Category')">PROMO</button>
+        </div>
+
+        <div id="combos">
+          <button onclick="addOrder('Entree')">#1 Dbl Smasher</button>
+          <button onclick="addOrder('Entree')">#2 Trp Smasher</button>
+          <button onclick="addOrder('Entree')">#3 Chzburger</button>
+          <button onclick="addOrder('Entree')">#4 DblChzburger</button>
+          <button onclick="addOrder('Entree')">#5 Bac Dbl Chzburger</button>
+          <button onclick="addOrder('Entree')">#6 BAC Stack</button>
+          <button onclick="addOrder('Entree')">#7 Gar BacBrger</button>
+          <button onclick="addOrder('Entree')">#8 Prem Hot Dog</button>
+          <button onclick="addOrder('Entree')">#9 12 CC Coney</button>
+          <button onclick="addOrder('Entree')">#10 Chk Bites</button>
+          <button onclick="addOrder('Entree')">#11 Crispy Chk</button>
+          <button onclick="addOrder('Entree')">#12 Crispy Strips</button>
+        </div>
+
+        <h2>Sides</h2>
+        <div id ="sides">
+        <button onclick="addOrder('Sides')">Fries</button>
+        <button onclick="addOrder('Sides')">Tots</button>
+        <button onclick="addOrder('Sides')">Onion Rings</button>
+        <button onclick="addOrder('Sides')">Mozz Sticks</button>
+        <button onclick="addOrder('Sides')">Ched Peps</button>
+        <button onclick="addOrder('Sides')">Pretzel</button>
+        <button onclick="addOrder('Sides')">Corn Dog</button>
+        <button onclick="addOrder('Sides')">Chili Chz Tot</button>
+        <button onclick="addOrder('Sides')">Chili Chz Fry</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+#container {
+    display: flex;
+    height: 90vh; /* take most of the screen height */
+}
+
+/* LEFT: Order list */
+#orderSection {
+    flex: 2; /* takes less space than menu */
+    padding: 20px;
+    border-right: 2px solid #ccc;
+    overflow-y: auto; /* scroll if too many items */
+}
+
+/* RIGHT: Buttons */
+#menuSection {
+    flex: 3; /* takes more space for buttons */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Existing button styles remain */
+#category button {
+    background-color: rgb(224, 210, 13);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    border-radius: 15px;
+}
+
+#category button:active {
+    background-color: rgb(251, 255, 0);
+}
+
+#category button.selected {
+    background-color: rgb(181, 184, 1);
+}
+
+#combos button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    width: 99px;
+    height: 99px;
+    margin: 1px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+#sides button {
+    background-color: rgb(224, 210, 13);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    border-radius: 15px;
+}
+
+#sides button:active {
+    background-color: rgb(251, 255, 0);
+}
+
+#sides button.selected {
+    background-color: rgb(181, 184, 1);
+}
+#combos, #sides {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns max */
+    gap: 1px; /* spacing between buttons */
+    justify-items: center; /* center buttons in each grid cell */
+}

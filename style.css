@@ -78,7 +78,14 @@
 }
 #combos, #sides {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns max */
-    gap: 1px; /* spacing between buttons */
-    justify-items: center; /* center buttons in each grid cell */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 5px; /* small gap between buttons */
+    justify-items: center;
+}
+
+#combos button,
+#sides button {
+    margin: 0; /* remove extra margin */
+    width: 100px;  /* keep size uniform */
+    height: 100px;
 }
